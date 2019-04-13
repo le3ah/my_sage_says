@@ -1,7 +1,7 @@
 class AdviceService
   def slip_query(query)
     response = conn.get("/advice/search/#{query}")
-    JSON.parse(response.body)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private
