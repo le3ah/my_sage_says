@@ -1,0 +1,3 @@
+--require spec_helper
+--formate=documentation
+--order=random
