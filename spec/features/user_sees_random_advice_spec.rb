@@ -6,5 +6,8 @@ describe  "As a user, visiting the site" do
 
     click_on("Get Random Advice")
     expect(current_path).to eq("/random")
+
+    click_on("Return to Welcome for More Advice")
+    expect(current_path).to eq(root_path)
   end
 end
