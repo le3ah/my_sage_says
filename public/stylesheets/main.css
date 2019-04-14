@@ -1,0 +1,15 @@
+body {
+  background-color: lightblue;
+}
+.main-welcome {
+  display: flex;
+  justify-content: space-around;
+}
+.w3-animate-fading {
+  background: url("/images/06.png") no-repeat center;
+  width: 48%;
+  background-size: 60%;
+}
+.main-welcome-query {
+  width: 48%;
+}
