@@ -4,6 +4,11 @@ class AdviceService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def random_advice
+    response = conn.get("/advice")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def conn
