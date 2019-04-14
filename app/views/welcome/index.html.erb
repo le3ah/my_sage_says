@@ -7,3 +7,10 @@
 <% end %>
 <h1>No dreams lately?  How about some random advice?</h1>
 <%= button_to "Get Random Advice", "/random", method: :get %>
+<h1>What's your favorite number?</h1>
+<h2>Numbers can mean a lot; how about some advice based on your favorite one?</h2>
+<%= form_tag "/number", method: "get" do %>
+  <%= label_tag :favorite_number, "Try numbers 1 - 218" %>
+  <%= number_field_tag :favorite_number %>
+  <%= submit_tag "Get Advice by Number" %>
+<% end %>
