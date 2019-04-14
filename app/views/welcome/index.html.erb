@@ -1,0 +1,7 @@
+<h1>What's on your mind?</h1>
+<h2>In one word, describe your most recent dream & get advice based on that dream!</h2>
+<%= form_tag "/search", method: "get" do %>
+  <%= label_tag :recent_dream, "Subject Matter" %>
+  <%= text_field_tag :recent_dream %>
+  <%= submit_tag "Get Advice" %>
+<% end %>
