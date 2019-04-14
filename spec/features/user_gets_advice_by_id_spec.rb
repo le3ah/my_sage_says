@@ -11,6 +11,9 @@ describe "As a user, visiting the site" do
 
     click_on("Get Advice by Number")
     expect(page).to have_content("Don't eat non-snow-coloured snow.")
+
+    click_on("Return to Welcome for More Advice")
+    expect(current_path).to eq(root_path)
   end
   it "sees notice after submitting a query string that does not exist" do
     id = 550
@@ -22,5 +25,8 @@ describe "As a user, visiting the site" do
 
     click_on("Get Advice by Number")
     expect(page).to have_content("Advice slip not found.")
+
+    click_on("Return to Welcome for More Advice")
+    expect(current_path).to eq(root_path)
   end
 end
