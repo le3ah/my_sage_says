@@ -1,5 +1,7 @@
 <% if @advice_by_query %>
-  <%= @advice_by_query %>
+  <% @advice_by_query.each do |advice| %>
+    <%= advice %> <br>
+  <% end %>
 <% else %>
 <% end %>
 <%= button_to "Return to Welcome for More Advice", root_path, method: :get %>
