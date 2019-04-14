@@ -1,16 +1,28 @@
-<h1>What's on your mind?</h1>
-<h2>In one word, describe your most recent dream & get advice based on that dream!</h2>
-<%= form_tag "/search", method: "get" do %>
-  <%= label_tag :recent_dream, "Subject Matter" %>
-  <%= text_field_tag :recent_dream %>
-  <%= submit_tag "Get Advice" %>
-<% end %>
-<h1>No dreams lately?  How about some random advice?</h1>
-<%= button_to "Get Random Advice", "/random", method: :get %>
-<h1>What's your favorite number?</h1>
-<h2>Numbers can mean a lot; how about some advice based on your favorite one?</h2>
-<%= form_tag "/number", method: "get" do %>
-  <%= label_tag :favorite_number, "Try numbers 1 - 218" %>
-  <%= number_field_tag :favorite_number %>
-  <%= submit_tag "Get Advice by Number" %>
-<% end %>
+<div class="main-welcome">
+  <div class="w3-animate-fading">
+
+  </div>
+  <div class="main-welcome-query">
+  <h1>What's on your mind?</h1>
+  <h2>In one word, describe your most recent dream & get advice based on that dream!</h2>
+  <%= form_tag "/search", method: "get" do %>
+    <%= label_tag :recent_dream, "Subject Matter" %>
+    <%= text_field_tag :recent_dream %>
+    <%= submit_tag "Get Advice" %>
+  <% end %>
+  <br>
+  <h1>No dreams lately?  How about some random advice?</h1>
+  <%= button_to "Get Random Advice", "/random", method: :get %>
+  <br>
+  <h1>What's your favorite number?</h1>
+  <h2>Numbers can mean a lot; how about some advice based on your favorite one?</h2>
+  <%= form_tag "/number", method: "get" do %>
+    <%= label_tag :favorite_number, "Try numbers 1 - 218" %>
+    <%= number_field_tag :favorite_number %>
+    <%= submit_tag "Get Advice by Number" %>
+  <% end %>
+  <br>
+  <br>
+  <p>Thanks absurd.design for the images!</p>
+  </div>
+</div>
