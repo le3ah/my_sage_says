@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/search', to: 'search#index'
   get '/random', to: 'random#show'
+  get '/number', to: 'number#show'
 end
