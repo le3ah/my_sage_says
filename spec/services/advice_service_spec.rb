@@ -49,4 +49,13 @@ describe AdviceService do
     expect(result[:slip]).to have_key(:advice)
     expect(result[:slip][:advice]).to eq("Don't eat non-snow-coloured snow.")
   end
+  it "returns a notice if no id matches" do
+    service = AdviceService.new
+    id = 219
+
+    result = service.slip_query(id)
+
+    expect(result[:message][:type]).to eq("notice")
+    expect(result[:message][:text]).to eq("No advice slips found matching that search term.")
+  end
 end
