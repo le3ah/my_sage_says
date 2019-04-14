@@ -10,5 +10,7 @@ class AdviceFacade
       advice[:message][:text]
     end
   end
-
+  def random_generator
+    AdviceService.new.random_advice[:slip][:advice]
+  end
 end
