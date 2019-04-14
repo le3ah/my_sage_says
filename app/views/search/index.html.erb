@@ -1,11 +1,20 @@
-<% if @advice_by_query.size == 1 %>
-  <%= @advice_by_query %>
-<% elsif @advice_by_query == "No advice slips found matching that search term." %>
-  <%= @advice_by_query %>
-<% elsif @advice_by_query %>
-  <% @advice_by_query.each do |advice| %>
-  <%= advice %>
+<div class="main-search">
+  <div class="search-query-image">
+
+  </div>
+  <div class="main-search-query">
+  <% if @advice_by_query.size == 1 %>
+    <%= @advice_by_query[0] %>
+  <% elsif @advice_by_query == "No advice slips found matching that search term." %>
+    <%= @advice_by_query %>
+  <% elsif @advice_by_query %>
+    <% @advice_by_query.each do |advice| %>
+    <%= advice %><br>
+    <% end %>
+  <% else %>
   <% end %>
-<% else %>
-<% end %>
-<%= button_to "Return to Welcome for More Advice", root_path, method: :get %>
+  <br>
+  <br>
+  <%= button_to "Return to Welcome for More Advice", root_path, method: :get %>
+</div>
+</div>
