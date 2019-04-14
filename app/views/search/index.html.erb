@@ -1,6 +1,10 @@
-<% if @advice_by_query %>
+<% if @advice_by_query.size == 1 %>
+  <%= @advice_by_query %>
+<% elsif @advice_by_query == "No advice slips found matching that search term." %>
+  <%= @advice_by_query %>
+<% elsif @advice_by_query %>
   <% @advice_by_query.each do |advice| %>
-    <%= advice %> <br>
+  <%= advice %>
   <% end %>
 <% else %>
 <% end %>
