@@ -12,6 +12,9 @@ describe "As a user, visiting the site" do
 
     click_on("Get Advice")
     expect(page).to have_content("Smile and the world smiles with you. Frown and you're on your own.")
+
+    click_on("Return to Welcome for More Advice")
+    expect(current_path).to eq(root_path)
   end
   it "sees notice after submitting a query string that does not exist" do
     query_string = "jobs"
@@ -24,5 +27,8 @@ describe "As a user, visiting the site" do
 
     click_on("Get Advice")
     expect(page).to have_content("No advice slips found matching that search term.")
+
+    click_on("Return to Welcome for More Advice")
+    expect(current_path).to eq(root_path)
   end
 end
