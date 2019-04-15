@@ -1,5 +1,15 @@
-<% if @random_advice %>
-  <%= @random_advice %>
-<% else %>
-<% end %>
-<%= button_to "Return to Welcome for More Advice", root_path, method: :get %>
+<div class="main-random">
+  <div class="random-splash">
+
+  </div>
+  <div class="random-query">
+    <% if @random_advice %>
+    <%= @random_advice %>
+    <% else %>
+    <% end %>
+    <br>
+    <br>
+    <%= button_to "Return to Welcome for More Advice", root_path, method: :get %>
+  </div>
+
+</div>
