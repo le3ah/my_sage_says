@@ -24,7 +24,7 @@ $ rails db:create
 $ rails db:migrate
 ```
 
-In order to see that the backend data is working appropriately, take the rails server for a spin!  Just type `rails s` in your terminal, and you should be able to find our backend APIs at http://localhost:3000
+In order to see that the backend data is working appropriately, take the rails server for a spin!  Just type `rails s` in your terminal, and you should be able to find the site locally at http://localhost:3000
 
 <img width="1390" alt="Screen Shot 2019-04-14 at 5 02 53 PM" src="https://user-images.githubusercontent.com/42391567/56165623-aa622980-5f90-11e9-9d2a-e5534aa2095d.png">
 
