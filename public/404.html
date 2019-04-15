@@ -4,13 +4,15 @@
   <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
+  .error-main-container {
+    display: flex;
+    justify-content: space-around;
+  }
   .error-container {
     padding: 15.01em 16px;
     width: 48%;
   }
   .rails-default-error-page {
-    display: flex;
-    justify-content: space-around;
     background-color: lightblue;
     color: #2E2F30;
     text-align: center;
@@ -71,16 +73,17 @@
 
 <body class="rails-default-error-page">
   <!-- This file lives in public/404.html -->
-  <div class="error-splash">
-
-  </div>
-  <div class="error-container">
-    <div class="dialog">
-      <div>
-        <h1>The page you were looking for doesn't exist.</h1>
-        <p>You may have mistyped the address or the page may have moved.</p>
+  <div class="error-main-container">
+    <div class="error-splash">
+    </div>
+    <div class="error-container">
+      <div class="dialog">
+        <div>
+          <h1>The page you were looking for doesn't exist.</h1>
+          <p>You may have mistyped the address or the page may have moved.</p>
+        </div>
+        <p>If you are the application owner check the logs for more information.</p>
       </div>
-      <p>If you are the application owner check the logs for more information.</p>
     </div>
   </div>
 </body>
