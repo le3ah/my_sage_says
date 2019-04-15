@@ -9,6 +9,10 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.main-random {
+  display: flex;
+  justify-content: space-around;
+}
 .w3-animate-fading {
   background: url("/images/06.png") no-repeat center;
   width: 48%;
@@ -21,9 +25,20 @@ body {
   padding: 15.01em 16px;
   width: 48%;
 }
+.random-query {
+  padding: 15.01em 16px;
+  width: 48%;
+}
 .search-query-image {
   padding: 25.01em 16px;
   background: url("/images/03.png") no-repeat center;
+  width: 48%;
+  height: 100px;
+  background-size: 65%;
+}
+.random-splash {
+  padding: 25.01em 16px;
+  background: url("/images/01.png") no-repeat center;
   width: 48%;
   height: 100px;
   background-size: 65%;
