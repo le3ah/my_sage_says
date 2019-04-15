@@ -1,5 +1,14 @@
-<% if @advice_by_number %>
-  <%= @advice_by_number %>
-<% else %>
-<% end %>
-<%= button_to "Return to Welcome for More Advice", root_path, method: :get %>
+<div class="main-number">
+  <div class="number-splash">
+
+  </div>
+  <div class="number-query">
+    <% if @advice_by_number %>
+    <%= @advice_by_number %>
+    <% else %>
+    <% end %>
+    <br>
+    <br>
+    <%= button_to "Return to Welcome for More Advice", root_path, method: :get %>
+  </div>
+</div>
