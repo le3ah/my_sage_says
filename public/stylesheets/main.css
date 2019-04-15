@@ -37,6 +37,7 @@ body {
   padding: 15.01em 16px;
   width: 48%;
 }
+
 .search-query-image {
   padding: 25.01em 16px;
   background: url("/images/03.png") no-repeat center;
@@ -54,13 +55,6 @@ body {
 .number-splash {
   padding: 25.01em 16px;
   background: url("/images/08.png") no-repeat center;
-  width: 48%;
-  height: 100px;
-  background-size: 65%;
-}
-.error-splash {
-  padding: 25.01em 16px;
-  background: url("/images/09.png") no-repeat center;
   width: 48%;
   height: 100px;
   background-size: 65%;
